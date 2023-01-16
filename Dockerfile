@@ -4,7 +4,7 @@ FROM $IMAGE
 
 WORKDIR /home/irisowner/irisbuild
 
-COPY data data
+COPY --chown=${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} data data
 
 ARG TESTS=0
 ARG MODULE="interoperability-sample"
