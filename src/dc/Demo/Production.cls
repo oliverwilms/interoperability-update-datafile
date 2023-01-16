@@ -26,6 +26,12 @@ XData ProductionDefinition
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
   </Item>
+  <Item Name="File Passthrough Service" Category="" ClassName="EnsLib.File.PassthroughService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="TargetConfigNames">Update DataFile BPL</Setting>
+    <Setting Target="Adapter" Name="FilePath">/home/irisowner/irisbuild/data/</Setting>
+  </Item>
+  <Item Name="Update DataFile BPL" Category="" ClassName="dc.Demo.UpdateDataFileBPL" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
 </Production>
 }
 
