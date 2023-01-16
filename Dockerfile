@@ -4,6 +4,8 @@ FROM $IMAGE
 
 WORKDIR /home/irisowner/irisbuild
 
+COPY data data
+
 ARG TESTS=0
 ARG MODULE="interoperability-sample"
 ARG NAMESPACE="USER"
